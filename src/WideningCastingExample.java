@@ -1,3 +1,4 @@
+// 자동 형변환 실습
 public class WideningCastingExample {
     public static void main(String[] args) {
         System.out.println("=== Java 자동 타입 변환 (Widening) 예제 ===");
