@@ -1,3 +1,4 @@
+//비트 연산 실습
 public class BitwiseOperationsExample {
     public static void main(String[] args) {
         System.out.println("=== Java 비트 연산 예제 ===\n");
