@@ -1,3 +1,4 @@
+// Scanner 입력 실습
 import java.util.Scanner;
 
 public class ScannerInputExample {
