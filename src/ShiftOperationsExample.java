@@ -1,3 +1,4 @@
+//시프트 연산 실습
 public class ShiftOperationsExample {
     public static void main(String[] args) {
         System.out.println("=== Java 시프트 연산 예제 ===\n");
