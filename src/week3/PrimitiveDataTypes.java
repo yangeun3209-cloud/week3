@@ -1,3 +1,4 @@
+//기본 데이터 타입 실습
 package week3;
 
 public class PrimitiveDataTypes {
