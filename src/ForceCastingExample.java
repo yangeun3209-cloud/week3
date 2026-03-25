@@ -1,3 +1,4 @@
+// 강제 형변환 실습
 public class ForceCastingExample {
     public static void main(String[] args) {
         System.out.println("=== Java 강제형변환(Casting) 예제 ===\n");
