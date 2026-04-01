@@ -1,3 +1,5 @@
+package week4;
+
 // 자동 형변환 실습
 public class WideningCastingExample {
     public static void main(String[] args) {
