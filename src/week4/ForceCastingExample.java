@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 package week4;
 
+=======
+>>>>>>> origin/main
 // 강제 형변환 실습
 public class ForceCastingExample {
     public static void main(String[] args) {

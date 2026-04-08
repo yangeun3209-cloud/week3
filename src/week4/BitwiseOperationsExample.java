@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 package week4;
 
+=======
+>>>>>>> origin/main
 //비트 연산 실습
 public class BitwiseOperationsExample {
     public static void main(String[] args) {

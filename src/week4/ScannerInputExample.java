@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 package week4;// Scanner 입력 실습
+=======
+// Scanner 입력 실습
+>>>>>>> origin/main
 import java.util.Scanner;
 
 public class ScannerInputExample {

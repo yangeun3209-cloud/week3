@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 package week4;
 
+=======
+>>>>>>> origin/main
 //증감 및 삼항 연산자 실습
 public class OperatorsExample {
     public static void main(String[] args) {
