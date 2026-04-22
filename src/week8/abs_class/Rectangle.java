@@ -1,4 +1,4 @@
-package week8;
+package week8.abs_class;
 
 public class Rectangle extends Shape {
     private double width;

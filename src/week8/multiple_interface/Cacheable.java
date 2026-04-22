@@ -1,4 +1,4 @@
-package week08;
+package multiple_interface;
 
 /**
  * interface Cacheable: default 메서드 serialize() (의도적 충돌)
