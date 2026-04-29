@@ -90,3 +90,63 @@ System.out.println(wrapper.equals(wrapper2)); // true (값 같음)
 - Lombok 미사용; 모든 오버라이드는 수동.
 - 객체 동등성 vs 참조 동등성 이해에 집중.
 - 예외를 처리하기 위해 다양한 입력으로 연습하세요.
+
+---
+
+## Week 9 추가 학습: ArrayList CRUD, String 비교, StringBuffer
+
+### 1) ArrayList CRUD (ArrayListCrud.java)
+- 목적: `ArrayList<String>`을 이용해 학생 목록을 관리한다 (add, get, set, remove).
+- 제약: 제네릭 타입 명시(예: `ArrayList<String>`) 필수, `size()`로 인덱스 범위 검증.
+- 위치: `src\\week9\\ArrayListCrud.java` (이미 포함됨)
+- 컴파일: `javac -d out src\\week9\\ArrayListCrud.java`
+- 실행: `java -cp out week9.ArrayListCrud`
+
+실행 흐름:
+1. 학생 5명 추가
+2. 전체 출력
+3. 인덱스 3 수정
+4. 인덱스 1 삭제
+5. 결과 재출력
+
+### 2) String 비교
+- `equals()`: 문자열 내용 기반 동등성 비교 (String은 이미 오버라이드 되어 있음).
+- `compareTo()`: 사전식(syntax) 비교를 수행 (0: 동일, <0: 작음, >0: 큼).
+
+예시:
+```java
+String a = "abc";
+String b = "abd";
+System.out.println(a.equals(b));      // false
+System.out.println(a.compareTo(b));   // 음수 (a < b)
+```
+
+### 3) String 객체의 변경 여부
+- Java `String`은 immutable(불변)입니다. 기존 객체의 내용이 변경되는 예시는 없습니다.
+- 변경처럼 보이는 연산(예: `concat`, `replace`)은 항상 새 `String` 객체를 반환합니다.
+```java
+String s = "a";
+String t = s.concat("b"); // s는 "a" 그대로, t는 "ab"
+// 따라서 "s"의 내용이 변경되지는 않음 (예시 주석 처리 권장)
+```
+
+### 4) StringBuffer 주요 메서드 예제
+- `append(...)`: 문자열/값 덧붙이기
+- `insert(offset, ...)`: 지정 위치에 삽입
+- `delete(start, end)`: 범위 삭제
+- `reverse()`: 내용 뒤집기
+
+간단 예제:
+```java
+StringBuffer sb = new StringBuffer("Hello");
+sb.append(" World");      // "Hello World"
+sb.insert(5, ',');         // "Hello, World"
+sb.delete(5, 6);           // remove ',' -> "Hello World"
+sb.reverse();              // "dlroW olleH"
+```
+
+참고: `StringBuffer`는 동기화(synchronized)되어 멀티스레드에서 안전함. 단일 스레드에서는 `StringBuilder`가 더 빠름.
+
+---
+
+작성자: 학습노트 자동생성
