@@ -1,3 +1,5 @@
+package week11.file.class_diagram;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
